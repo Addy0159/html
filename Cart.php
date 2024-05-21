@@ -39,7 +39,7 @@ if (isset($_SESSION["user_id"])) {
         </header>
     </div>
 	<button id="dark" onclick="dark()">Dark</button>
-	<button id="Login"><a href="Login.php">Login</a></button>
+	<button id="Login"><a href="login.php">Login</a></button>
 	<div class="container">
 		<div id="shopping-cart">
 			<h1>Shopping cart</h1>

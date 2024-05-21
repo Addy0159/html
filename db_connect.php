@@ -1,6 +1,6 @@
 <?php
 $server = "localhost";
-$user = "root";
+$user = "addy";
 $pw = "Kazuha@05";
 $db = "termin";
 

@@ -43,7 +43,7 @@ if (isset($_SESSION["user_id"])) {
 
     
     <button id="dark" onclick="dark()">Dark</button>
-    <button id="Login"><a href="Login.php">Login</a></button>
+    <button id="Login"><a href="login.php">Login</a></button>
     <div class="ware">
         <br>
         <div id="Hovedkort">
