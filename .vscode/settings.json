@@ -13,6 +13,20 @@
             "database": "termin",
             "username": "addy",
             "askForPassword": true
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "addy1",
+            "database": "termin",
+            "username": "root",
+            "askForPassword": true
         }
     ]
 }
