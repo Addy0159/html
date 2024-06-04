@@ -32,7 +32,7 @@ if (isset($_SESSION["user_id"])) {
         <a href="design_manual.php">Design manual</a>
     </header>
     <button id="dark" onclick="dark()">Dark</button>
-    <button id="Login"><a href="login.php">Login</a></button>
+    <button id="Login"><a href="Login.php">Login</a></button>
     <div id="Designmanual">
         <iframe src="Docks/Digi_Store_AS_designmanual.pdf">Design manual</iframe>
     </div>
