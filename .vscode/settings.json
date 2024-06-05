@@ -6,26 +6,12 @@
                 "enableSsl": "Disabled"
             },
             "previewLimit": 50,
-            "server": "localhost",
+            "server": "127.0.0.1",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "addy",
+            "name": "Adam",
             "database": "termin",
-            "username": "addy",
-            "askForPassword": true
-        },
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MariaDB",
-            "name": "addy1",
-            "database": "termin",
-            "username": "root",
+            "username": "adam",
             "askForPassword": true
         }
     ]

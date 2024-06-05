@@ -28,7 +28,7 @@
 
     
     <button id="dark" onclick="dark()">Dark</button>
-    <button id="Login"><a href="login.php">Login</a></button>
+    <button id="Login"><a href="Login.php">Login</a></button>
     <div class="contain">
         <h2>Register</h2>
 
@@ -100,7 +100,18 @@
 
 </body>
 <?php
-include 'db_connect.php';
+$server = "127.0.0.1";
+$user = "adam";
+$pw = "Kazuha@05";
+$db = "termin";
+
+$conn = mysqli_connect($server, $user, $pw, $db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
 
 // Process registration form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -123,7 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if the query was successful
     if ($result) {
         // Registration successful, redirect to login page
-        header("Location: login.php");
+        header("Location: Login.php");
         exit;
     } else {
         // Registration failed

@@ -29,7 +29,7 @@
 	</div>
 
 	<button id="dark" onclick="dark()">Dark</button>
-	<button id="Login"><a href="login.php">Login</a></button>
+	<button id="Login"><a href="Login.php">Login</a></button>
 	<div class="contain">
 		<h2>Login:</h2>
 		<form action="Login.php" method="post">
@@ -52,18 +52,18 @@
             <td>
                 <div id="OM">
                     <h3>About us</h3>
-                    <p>Digistore is an online store that <br> sells tech products with cheap prices <br>
+                    <p>Digistore is an online store that sells tech products with cheap prices 
                         The Portfolio to the owner <a href="My_work.php">Addy's Portfolio</a> 
                 </div>
             </td>
             <td>
                 <div id="KON">
                     <h3>Info</h3>
-                    <p>Email: <a href="mailTo: adam.a.v@outlook.com">adam.a.v@outlook.com</a><br>
-                        Number: 458 57 340 <br>
+                    <p>Email: <a href="mailTo: adam.a.v@outlook.com">adam.a.v@outlook.com</a>
+                        Number: 458 57 340 
                         <a href="https://www.google.com/maps?q=Kabelgata+10-12,+0580+Oslo&z=15" target="_blank"
                             arria-label="Kabelgata 10-12, 0580 Oslo - Open link"> <span>Kabelgata 10-12, 0580
-                                Oslo</span></a> <br> <a
+                                Oslo</span></a>  <a
                                 href="FAQ.php">FAQ</a> </p>
                     </p>
                 </div>
@@ -72,10 +72,9 @@
                 <div id="SOS">
                     <h3>Sosial media</h3>
                     <p>
-                        Instagram: <a href="https://www.instagram.com/adamahmed05/" target="_blank">Addy's Insta</a><br>
-                        Twitter: <a href="https://twitter.com/Addy_gaming05" target="_blank">Addy's Twitter</a><br>
-                        Linkdin: <a href="https://www.linkedin.com/in/adam-virk-579bb01aa/" target="_blank">Addy's
-                            Linedin</a>
+                        Instagram: <a href="https://www.instagram.com/adamahmed05/" target="_blank">Addy's Insta</a>
+                        Twitter: <a href="https://twitter.com/Addy_gaming05" target="_blank">Addy's Twitter</a>
+                        Linkdin: <a href="https://www.linkedin.com/in/adam-virk-579bb01aa/" target="_blank">Addy's Linedin</a>
                     </p>
                 </div>
             </td>
@@ -89,7 +88,18 @@
 </body>
 
 <?php
-include 'db_connect.php';
+$server = "127.0.0.1";
+$user = "adam";
+$pw = "Kazuha@05";
+$db = "termin";
+
+$conn = mysqli_connect($server, $user, $pw, $db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
 
 // Process login form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

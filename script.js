@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     redirectButton.addEventListener("click", function () {
         // Use the window.location.href to redirect to the desired URL.
-        window.location.href = "http://localhost/Arsoppgave/login.php"; // Replace with your target URL
+        window.location.href = "/var/www/html/Login.php"; // Replace with your target URL
     });
 });
 

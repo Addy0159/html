@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Clear the cart
     $_SESSION['cart'] = [];
     echo "<h1>Thank you for your purchase!</h1>";
+    echo "<a href=\"Index.php\">Go back to home</a>";
     exit;
 }
 
@@ -25,7 +26,7 @@ if (isset($_SESSION["user_id"])) {
     echo "<script>console.log('<a href=\"Login.php\">Login</a>');</script>";
 }
 
-$mysqli = new mysqli("localhost", "root", "Admin", "termin");
+$mysqli = new mysqli("127.0.0.1", "adam", "Kazuha@05", "termin");
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }

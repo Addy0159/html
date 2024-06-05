@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 session_start();
-$mysqli = new mysqli("localhost", "root", "Admin", "termin");
+$mysqli = new mysqli("127.0.0.1", "adam", "Kazuha@05", "termin");
 
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
